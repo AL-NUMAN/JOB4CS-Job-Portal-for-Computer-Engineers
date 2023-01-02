@@ -1,0 +1,22 @@
+.selected_post{
+	
+	background-color:rgb(88,88,88);
+	color:white;
+	
+	width:530px;
+	
+}
+
+.application_div{
+	
+	
+position:absolute;
+width:750px;
+height:550px;
+
+left:600px;
+top:60px;
+
+	
+	
+}

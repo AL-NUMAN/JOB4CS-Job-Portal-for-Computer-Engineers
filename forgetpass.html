@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Forget Password</title>
+    <link href="styleforgetpass.css" rel="stylesheet" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    
+  </head>
+
+
+  
+  <body>
+<div class="ForPassdiv">
+
+ <form action="forgetpass.php" method="POST" style="position:absolute; left:100px;">
+      <label class="label-default" for="un" >Email Address</label> <input required id="email_addy" name="email_addy" class="form-control" type="email"><br>
+
+        <label class="label-default" for="un" >New Password</label> <input id="newpass_addy" name="newPass_addy" class="form-control" type="password" required><br>
+          <label class="label-default" for="un" style="position:relative; left:-30px;top:20px;">
+		  Confirm Password</label> <input id="passconfirm_addy" name="confirmNewPass_addy" 
+		  class="form-control" type="password" 
+		  style="position:relative; left:135px; top:-15px;"><br>
+          
+          <input type="submit" value="OK" required  name="forgetPassOK" onclick="return Validate()"
+		  style="background-color:rgb(102, 153, 153); color: white;width:90px; height:30px; 
+		  position:absolute; left:70px;">
+          
+          
+          
+          
+          </form></div>
+
+
+          
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("newpass_addy").value;
+        var confirmPassword = document.getElementById("passconfirm_addy").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }</script>
+  </body>

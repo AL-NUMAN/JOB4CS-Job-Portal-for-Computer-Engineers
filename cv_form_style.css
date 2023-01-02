@@ -1,0 +1,28 @@
+#view_icon{
+	
+	font-size:228px; 
+	 position:absolute; 
+	 left:115px;
+	 z-index:2;
+   transform: translateX(-50%);
+  cursor: pointer;
+}
+.view{
+	
+	font-size:28px;
+	
+	 color:white; 
+	 position:absolute;
+	 top:50px; left:50px;
+	 width:130px;
+	 text-align:center;
+	 padding-top:40px;
+	 height:130px;
+	display:none;
+}
+
+#view_icon:hover .view{
+	
+	display:block;
+	cursor: pointer;
+}
